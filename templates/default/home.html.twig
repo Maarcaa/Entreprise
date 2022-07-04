@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page Accueil{% endblock %}
+{% block title %}Page Accueil - MarcAlexandre Mitevski{% endblock %}
 
 {% block body %}
 
@@ -34,7 +34,7 @@
                         <td>{{ employe.salary }}</td>
                         <td>
                             <a href="{{path('employe_update', {'id': employe.id}) }}" class="btn btn-sm btn-primary" title="Modifier un employe"><i class="fa-solid fa-user-pen"></i></a>
-                            <a href="{{patch ('employe_delete',{'id': employe.id}) }}" class="btn btn-sm btn-danger" title="Supprimer un employe"><i class="fa-solid fa-trash"></i></a>
+                            <a href="{{path('employe_delete',{'id': employe.id}) }}" class="btn btn-sm btn-danger" title="Supprimer un employe"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 {%  endfor %}
